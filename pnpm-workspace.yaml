@@ -1,0 +1,17 @@
+permissions:
+  void:
+    skills: [ migrate-vite-cloudflare-to-void, void ]
+skills:
+  dirs:
+    - .agents/skills
+
+allowBuilds:
+  esbuild: true
+  workerd: true
+  better-sqlite3: false
+  sharp: true
+overrides:
+  vite@*: npm:@voidzero-dev/vite-plus-core@^1.5.0
+peerDependencyRules:
+  allowedVersions:
+    vite: "*"
